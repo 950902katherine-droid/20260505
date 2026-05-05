@@ -18,6 +18,12 @@ function draw() {
   let x = (width - w) / 2;
   let y = (height - h) / 2;
   
+  // 顯示文字：教科414730357
+  fill(0); // 設定文字顏色（黑色）
+  textSize(windowHeight * 0.05); // 根據視窗高度動態調整字體大小
+  textAlign(CENTER, CENTER);
+  text("教科414730357", width / 2, y / 2); // 放置在影像上方空白區域的中心
+
   push();
   // 將座標原點移至影像預計出現的右側，並進行水平翻轉
   translate(x + w, y);
